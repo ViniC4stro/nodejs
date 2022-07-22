@@ -1,0 +1,30 @@
+{{>partials/header}}
+
+<form method="GET">
+
+    <label>Nome Completo:</label>
+    <input type="text" name="nome" placeholder="Digite aqui">
+
+    <label> Idade:</label>
+    <input type="text" name="age" placeholder="Digite aqui"><br/>
+    <br/>
+
+    <label>Telefone:</label>
+    <input type="text" name="tell" placeholder="Digite aqui">
+
+    <label>Endereço:</label>
+    <input type="text" name="address" placeholder="Digite aqui">
+
+    <button>Enviar</button>
+
+</form>
+<br/>
+
+    {{#exibir}}
+
+    Olá {{name}}, tudo bem? Sua idade é {{idade}} seu telefone é {{telefone}}, e seu endereço é {{address}}
+
+    {{/exibir}}
+
+
+{{>partials/footer}}
